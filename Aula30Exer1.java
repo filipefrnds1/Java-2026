@@ -11,6 +11,8 @@ public class Aula30Exer1 {
 		x = sc.nextInt();
 		y = sc.nextInt();
 		
+		
+		
 		System.out.println("SOMA = " + (x+y));
 		
 		
