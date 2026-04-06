@@ -25,20 +25,20 @@ public class ProgramProduct {
         prod.quantity = sc.nextInt();
 
         System.out.println();
-        System.out.println(prod.toString());
+        System.out.println("Product " + prod.toString());
 
         System.out.print("Enter the number of products to be added in stock: ");
         prod.addProducts(sc.nextInt());
         System.out.println();
 
-        System.out.println(prod.toString());
+        System.out.println("Updated " + prod.toString());
 
         System.out.print("Enter the number of products to be removed from stock: ");
         int remov = sc.nextInt();
         prod.removeProducts(remov);
         System.out.println();
 
-        System.out.println(prod.toString());
+        System.out.println("Update " + prod.toString());
 
 
 

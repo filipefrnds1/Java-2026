@@ -20,7 +20,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product data: " +
+        return "data: " +
                 name + ", $ " +
                 String.format("%.2f", price) +
                 ", " + quantity + " units, Total: $ " +
