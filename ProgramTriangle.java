@@ -25,8 +25,8 @@ public class ProgramTriangle {
         px = (x.a+x.b+x.c)/2;
         py = (y.a+y.b+y.c)/2;
 
-        areaX = Math.sqrt(px*(px-x.a)*(px-x.b)*(px-x.c));
-        areaY = Math.sqrt(py*(py-y.a)*(py-y.b)*(py-y.c));
+        areaX = x.area();
+        areaY = y.area();
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
