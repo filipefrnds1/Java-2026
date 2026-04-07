@@ -20,10 +20,10 @@ public class ProgramProductAgain {
         System.out.print("Price: ");
         double price = sc.nextDouble();
 
-        System.out.print("Quantity in stock: ");
+       /* System.out.print("Quantity in stock: ");
         int quantity = sc.nextInt();
-
-        ProductAgain prod = new ProductAgain(name,price,quantity);
+       */
+        ProductAgain prod = new ProductAgain(name,price);
 
 
         System.out.println();
