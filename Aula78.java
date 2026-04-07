@@ -1,37 +1,34 @@
+import util.Calculator;
+
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Aula78 {
 
-    public static final double PI = 3.14;
+
 
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        Calculator calc = new Calculator();
 
 
         System.out.print("Enter radius: ");
         double radius = sc.nextDouble();
 
-        double c = circum(radius);
-        double v = volume(radius);
+        double c = calc.circum(radius);
+        double v = calc.volume(radius);
 
         System.out.printf("Circumference: %.2f%n", c);
 
         System.out.printf("Volume: %.2f%n", v);
 
-        System.out.printf("PI value: %.2f", PI);
+        System.out.printf("PI value: %.2f", calc.PI);
 
         sc.close();
     }
 
-    public static double circum(double radius){  // o método MAIN é estático,
-        return 2 * PI * radius;                 // nao pode chamar um metodo que não é estatico em um  método que é estático
-    }
 
-    public static double volume(double radius){
-        return (4 * PI * Math.pow(radius, 3)) / 3;
-    }
 }
