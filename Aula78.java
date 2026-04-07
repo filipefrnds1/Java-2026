@@ -15,15 +15,23 @@ public class Aula78 {
         System.out.print("Enter radius: ");
         double radius = sc.nextDouble();
 
-        double circum = 2 * PI * radius;
-        double volume = (4 * PI * Math.pow(radius, 3)) / 3;
+        double c = circum(radius);
+        double v = volume(radius);
 
-        System.out.printf("Circumference: %.2f%n", circum);
+        System.out.printf("Circumference: %.2f%n", c);
 
-        System.out.printf("Volume: %.2f%n", volume);
+        System.out.printf("Volume: %.2f%n", v);
 
         System.out.printf("PI value: %.2f", PI);
 
         sc.close();
+    }
+
+    public static double circum(double radius){
+        return 2 * PI * radius;
+    }
+
+    public static double volume(double radius){
+        return (4 * PI * Math.pow(radius, 3)) / 3;
     }
 }
