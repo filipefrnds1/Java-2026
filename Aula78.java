@@ -27,8 +27,8 @@ public class Aula78 {
         sc.close();
     }
 
-    public static double circum(double radius){
-        return 2 * PI * radius;
+    public static double circum(double radius){  // o método MAIN é estático,
+        return 2 * PI * radius;                 // nao pode chamar um metodo que não é estatico em um  método que é estático
     }
 
     public static double volume(double radius){
