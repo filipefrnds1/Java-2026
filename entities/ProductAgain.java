@@ -5,6 +5,10 @@ public class ProductAgain {
     public double price;
     public int quantity;
 
+    public ProductAgain(){
+
+    }
+
     public ProductAgain(String name, double price, int quantity){
         this.name = name;
         this.price = price;
