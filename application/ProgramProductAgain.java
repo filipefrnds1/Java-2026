@@ -25,6 +25,8 @@ public class ProgramProductAgain {
        */
         ProductAgain prod = new ProductAgain(name,price);
 
+        System.out.println("Name : " + prod.getName());
+        prod.setName("Computer");
 
         System.out.println();
         System.out.println("Product " + prod.toString());
