@@ -1,7 +1,7 @@
 package entities;
 
 public class ProductAgain {
-    private String name;
+    private String name; // modificadores de acesso, PUBLIC - PRIVATE - PROTECTED - SEM NADA : OBS: SEM NADA PODE SER ACESSADO POR OUTRA CLASSE DO MESMO PACOTE
     private double price;
     private int quantity;
 
