@@ -12,7 +12,7 @@ public class Bank {
     public Bank(String accountNumber, String name, double accountValue){
         this.accountNumber = accountNumber;
         this.name = name;
-        this.accountValue = accountValue;
+        depValue(accountValue);
     }
 
     public Bank(String accountNumber, String name){

@@ -42,7 +42,7 @@ public class ProgramBank {
         System.out.print("Enter a withdraw value: ");
         b.saqValue(sc.nextDouble());
         System.out.println("Updated account data: ");
-        System.out.println(b.toString());
+        System.out.println(b);
 
 
         sc.close();
