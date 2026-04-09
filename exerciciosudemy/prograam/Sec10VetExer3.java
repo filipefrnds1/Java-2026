@@ -13,7 +13,7 @@ public class Sec10VetExer3 {
         System.out.print("Quantas pessoas serão digitadas? ");
         int n = sc.nextInt();
         double media = 0;
-        double sum = 0;
+        int sum = 0;
         Pessoas[] p = new Pessoas[n];
 
         for(int i = 0; i < p.length; i++){
@@ -41,7 +41,7 @@ public class Sec10VetExer3 {
             }
         }
 
-        System.out.println("Pessoas com menos de 16 anos: " + ((sum/p.length)*100) + "%");
+        System.out.println("Pessoas com menos de 16 anos: " + (((double)sum/p.length)*100) + "%");
 
         for(int i = 0; i < p.length; i++){
             if(p[i].getIdade() < 16){
