@@ -26,7 +26,7 @@ public class Aula97Exer1v2 {
 
         double average = sum / n;
 
-        System.out.printf("AVERAGE PRICE = %.2f", average3);
+        System.out.printf("AVERAGE PRICE = %.2f", average);
 
 
 
