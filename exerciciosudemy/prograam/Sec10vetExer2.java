@@ -1,4 +1,4 @@
-package exerciciosudemy;
+package exerciciosudemy.prograam;
 
 import java.util.Locale;
 import java.util.Scanner;
