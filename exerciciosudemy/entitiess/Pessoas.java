@@ -8,6 +8,10 @@ public class Pessoas {
     public Pessoas(){
 
     }
+    public Pessoas(String name, int idade){
+        this.name = name;
+        this.idade = idade;
+    }
 
     public Pessoas(String name, int idade, double altura){
         this.name = name;
