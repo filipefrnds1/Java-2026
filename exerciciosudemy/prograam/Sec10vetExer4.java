@@ -10,6 +10,7 @@ public class Sec10vetExer4 {
 
         System.out.print("Quantos numeros você vai digitar? ");
         int n = sc.nextInt();
+
         int[] num = new int[n];
         int sum = 0;
 
@@ -19,6 +20,7 @@ public class Sec10vetExer4 {
         }
 
         System.out.println("\nNUMEROS PARES: ");
+
         for(int i = 0; i < num.length; i++){
             if(num[i] % 2 == 0){
                 System.out.print(num[i] + "  ");
