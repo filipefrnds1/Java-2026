@@ -10,7 +10,9 @@ public class Aula103 {
 
         int x = 20;
 
-        Object obj = x;
+        Integer obj = x; // As wrapper classes são classes que tem o objetivo de tratar os tipos primitivos como classes
+                        // só que de uma forma transparente ao compilador, sem precisar com conversões e casting
+                       // campos de entidades em sistemas de informação, pois tipos referencia aceitam valor null e usufruem dos recursos de OO
 
         System.out.println(obj);
 
