@@ -15,7 +15,7 @@ public class Aula101Exer {
         System.out.println();
 
         String name,email;
-        int room,aux;
+        int room;
         Pensionato[] pen = new Pensionato[10];
 
         for(int i = 0; i < n; i++){
@@ -34,7 +34,7 @@ public class Aula101Exer {
         System.out.println("Busy rooms: ");
         for(int i = 0; i < pen.length; i++){
             if(pen[i] != null){
-                System.out.println(i + ": " + pen[i].getName() + ", " + pen[i].getEmail());
+                System.out.println(i + ": " + pen[i]);
             }
         }
 

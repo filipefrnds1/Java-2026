@@ -31,6 +31,12 @@ public class Pensionato {
         this.email = email;
     }
 
+    @Override
+    public String toString(){
+        return  name +
+                ", " +
+                email;
+    }
 
 
 }
