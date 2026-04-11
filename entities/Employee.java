@@ -40,6 +40,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void increaseSalary(Double percentage){
+        salary += salary * percentage / 100.0;
+    }
+
     @Override
     public String toString(){
         return id +
