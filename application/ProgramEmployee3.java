@@ -22,6 +22,8 @@ public class ProgramEmployee3 {
             System.out.print("Id: ");
             Integer id = sc.nextInt();
             while(hasId(list,id)){
+                System.out.print("Id already taken! Try again: ");
+                id = sc.nextInt();
 
             }
             sc.nextLine();
