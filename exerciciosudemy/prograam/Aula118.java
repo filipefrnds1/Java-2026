@@ -15,6 +15,7 @@ public class Aula118 {
         //https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyy");
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+        DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy");
 
         LocalDate d01 = LocalDate.now();
         LocalDateTime d02 = LocalDateTime.now();
@@ -32,6 +33,9 @@ public class Aula118 {
         LocalDate d11 = LocalDate.of(2022, 7, 20);
         LocalDateTime d12 = LocalDateTime.of(2022, 7, 20, 1, 30);
 
+        String d13 = d01.format(fmt3);
+
+
         System.out.println("d01 = " + d01.toString());
         System.out.println("d02 = " + d02);
         System.out.println("d03 = " + d03);
@@ -44,6 +48,8 @@ public class Aula118 {
         System.out.println("d10 = " + d10);
         System.out.println("d11 = " + d11);
         System.out.println("d12 = " + d12);
+        System.out.println("d13 = " + d13);
+
 
 
 
