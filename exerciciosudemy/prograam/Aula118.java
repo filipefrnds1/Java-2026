@@ -17,9 +17,9 @@ public class Aula118 {
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy");
 
-        LocalDate d01 = LocalDate.now();
-        LocalDateTime d02 = LocalDateTime.now();
-        Instant d03 = Instant.now();
+        LocalDate d01 = LocalDate.now(); //data local
+        LocalDateTime d02 = LocalDateTime.now(); // data e hora lolal
+        Instant d03 = Instant.now(); // zulu time GMT
 
         LocalDate d04 = LocalDate.parse("2022-07-20");
         LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
