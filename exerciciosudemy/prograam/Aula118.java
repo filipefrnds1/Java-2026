@@ -3,6 +3,7 @@ package exerciciosudemy.prograam;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class Aula118 {
         //https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyy");
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-        DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy");
+        DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy").withZone(ZoneId.systemDefault());
 
         LocalDate d01 = LocalDate.now(); //data local
         LocalDateTime d02 = LocalDateTime.now(); // data e hora lolal
@@ -35,6 +36,7 @@ public class Aula118 {
 
         String d13 = d01.format(fmt3);
 
+        LocalDate d14 = LocalDate.now();
 
         System.out.println("d01 = " + d01.toString());
         System.out.println("d02 = " + d02);
@@ -49,6 +51,8 @@ public class Aula118 {
         System.out.println("d11 = " + d11);
         System.out.println("d12 = " + d12);
         System.out.println("d13 = " + d13);
+        System.out.println("d14 = " + d14.format(fmt1));
+        System.out.println("fmt3 = " + fmt3.format(d06));
 
 
 
