@@ -50,9 +50,15 @@ public class ProgramComposition {
 
         }
 
+
+
+        for(Post post: list){
+            System.out.println(post.toString());
+        }
+
         for(Post post : list){
             System.out.println(post.getTitle());
-            System.out.println(post.getLikes() + " Likes - " + post.getMoment());
+            System.out.println(post.getLikes() + " Likes - " + dtf1.format(post.getMoment()));
             System.out.println(post.getContent());
             System.out.println("Comments: ");
             for(int i = 0; i < 2; i++){
