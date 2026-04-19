@@ -1,18 +1,18 @@
 package projectcomposi133.entities;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Client {
 
     private String name;
     private String email;
-    private LocalDateTime birthDate;
+    private LocalDate birthDate;
 
     public Client(){
 
     }
 
-    public Client(String name, String email, LocalDateTime birthDate) {
+    public Client(String name, String email, LocalDate birthDate) {
         setName(name);
         setEmail(email);
         setBirthDate(birthDate);
@@ -34,11 +34,11 @@ public class Client {
         this.email = email;
     }
 
-    public LocalDateTime getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDateTime birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 }
