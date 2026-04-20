@@ -55,7 +55,7 @@ public class Program {
             sc.nextLine();
 
             OrderItem ordes = new OrderItem(prodQuantity,prodPrice);
-            Product prods = new Product(prodPrice,prodName);
+            Product prods = new Product(prodName,prodPrice);
 
             ord.addItem(ordes);
             ord.getList().get(i).addProduct(prods);
