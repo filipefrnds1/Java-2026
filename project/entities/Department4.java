@@ -20,7 +20,5 @@ public class Department4 {
         this.name = name;
     }
 
-    public String toString(){
-        return getName();
-    }
+
 }
