@@ -9,11 +9,11 @@ public class Post2 {
 
     DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-    public LocalDateTime moment;
-    public String title;
-    public String content;
-    public Integer likes;
-    public List<Comment2> comment = new ArrayList<>();
+    private LocalDateTime moment;
+    private String title;
+    private String content;
+    private Integer likes;
+    private List<Comment2> comment = new ArrayList<>();
 
 
     public Post2(LocalDateTime moment, String title, String content, Integer likes) {
