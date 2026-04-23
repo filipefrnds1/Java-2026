@@ -3,7 +3,7 @@ package projectherança.entities;
 public class Account2 {
    private Integer number;
    private String holder;
-   private Double balance;
+   protected Double balance;
 
    public Account2(){
 

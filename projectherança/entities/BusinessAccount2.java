@@ -22,7 +22,7 @@ public class BusinessAccount2 extends Account2{
 
     public void loan(Double amount){
         if(amount <= loadLimit){
-            deposit(amount);
+            balance += loadLimit - 10.0;
         }
     }
 }
