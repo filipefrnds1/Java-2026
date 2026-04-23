@@ -23,6 +23,8 @@ public class ProgramWorker4 {
         System.out.print("Name: ");
         String name = sc.nextLine();
         System.out.print("Level: ");
+
+
         WorkerLevel4 level = WorkerLevel4.valueOf(sc.next());
         System.out.print("Base salary: ");
         Double baseSalary = sc.nextDouble();

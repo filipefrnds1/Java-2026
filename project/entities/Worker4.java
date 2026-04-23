@@ -8,10 +8,10 @@ import java.util.List;
 
 public class Worker4 {
 
-    public String name;
-    public WorkerLevel4 level;
-    public Double baseSalary;
-    public Department4 department;
+    private String name;
+    private WorkerLevel4 level;
+    private Double baseSalary;
+    private Department4 department;
 
     List<HourContract4> contract = new ArrayList<>();
 
