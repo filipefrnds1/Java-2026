@@ -17,7 +17,7 @@ public class ProgramEmployee142 {
         int n = sc.nextInt();
 
         List<Employee> list = new ArrayList<>();
-        Employee emp;
+
 
 
         for(int i = 0; i < n; i++){
@@ -40,12 +40,10 @@ public class ProgramEmployee142 {
             if(outs == 'y'){
                 System.out.print("Additional charge: ");
                 double addCharge = sc.nextDouble();
-                emp = new OutsourcedEmployee(name,hours,valuePerHour,addCharge);
-                list.add(emp);
+                list.add(new OutsourcedEmployee(name,hours,valuePerHour,addCharge));
             }
             else{
-                emp = new Employee(name,hours,valuePerHour);
-                list.add(emp);
+                list.add( new Employee(name,hours,valuePerHour));
             }
 
         }
@@ -53,8 +51,8 @@ public class ProgramEmployee142 {
 
         System.out.println("\nPAYMENTS: ");
 
-        for(Employee emps : list){
-            System.out.println(emps);
+        for(Employee emp : list){
+            System.out.println(emp);
         }
 
 
