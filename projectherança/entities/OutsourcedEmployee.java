@@ -5,6 +5,7 @@ public class OutsourcedEmployee extends Employee {
     private Double additionalCharge;
 
     public OutsourcedEmployee() {
+        super();
     }
 
     public OutsourcedEmployee(String name, Integer hours, Double valuePerHour, Double additionalCharge) {
@@ -22,7 +23,7 @@ public class OutsourcedEmployee extends Employee {
 
     @Override
     public double payment(){
-        return super.payment() + additionalCharge + (additionalCharge * 0.1) ;
+        return super.payment() + additionalCharge * 1.1;
     }
 
     @Override
