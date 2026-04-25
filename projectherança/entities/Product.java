@@ -2,7 +2,7 @@ package projectherança.entities;
 
 public class Product {
 
-    protected String name;
+    private String name;
     protected Double price;
 
     public Product(){

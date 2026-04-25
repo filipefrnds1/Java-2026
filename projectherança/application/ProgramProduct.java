@@ -43,8 +43,9 @@ public class ProgramProduct {
             else if(typeTag == 'u'){
                 System.out.print("Manufacture date (DD/MM/YYYY): ");
                 sc.nextLine();
-                String dt = sc.nextLine();
-                LocalDate date = LocalDate.parse(dt,fmt1);
+                LocalDate date = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                /* String dt = sc.nextLine();
+                LocalDate date = LocalDate.parse(dt,fmt1); */
                 list.add(new UsedProduct(name,price,date));
             }else{
                 System.out.print("Customs fee: ");
@@ -55,6 +56,7 @@ public class ProgramProduct {
         }
 
         System.out.println();
+        System.out.println("PRICE TAGS: ");
         for(Product p : list){
             System.out.println(p.priceTag());
         }
