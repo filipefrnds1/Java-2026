@@ -1,6 +1,8 @@
-package projectherança.entities;
+package projectpolimorfismo.entities;
 
-public class SavingsAccount2 extends Account2{
+import projectherança.entities.Account2;
+
+public class SavingsAccount2 extends Account2 {
 
     private Double interestRate;
 
@@ -8,7 +10,7 @@ public class SavingsAccount2 extends Account2{
         super();
     }
 
-    public SavingsAccount2(Integer number, String holder,Double balance, Double interestRate){
+    public SavingsAccount2(Integer number, String holder, Double balance, Double interestRate){
         super(number,holder,balance);
         this.interestRate = interestRate;
     }
