@@ -1,4 +1,4 @@
-package projectpolimorfismo.application;
+package projectpolimorfismo.entities;
 
 import projectpolimorfismo.enums.Color;
 
