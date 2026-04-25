@@ -1,4 +1,4 @@
-package projectherança.entities;
+package projectpolimorfismo.entities;
 
 public abstract class Account2 {
    private Integer number;
