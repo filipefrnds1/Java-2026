@@ -1,6 +1,8 @@
-package projectherança.entities;
+package projectpolimorfismo.entities;
 
-public class BusinessAccount2 extends Account2{
+import projectherança.entities.Account2;
+
+public class BusinessAccount2 extends Account2 {
     public Double loadLimit;
 
     public BusinessAccount2(){
