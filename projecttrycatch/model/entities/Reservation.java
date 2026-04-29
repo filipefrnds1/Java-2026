@@ -46,7 +46,7 @@ public class Reservation {
     }
 
     public void updateDates(LocalDate checkIn, LocalDate checkOut) {
-        LocalDate now = LocalDate.now();
+       /* LocalDate now = LocalDate.now();
 
         // Verificação de datas futuras
         if (checkIn.isBefore(now) || checkOut.isBefore(now)) {
@@ -54,7 +54,7 @@ public class Reservation {
         }
         if (!checkOut.isAfter(checkIn)) {
             throw new DomainException("Check-out date must be after check-in date");
-        }
+        }*/
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
