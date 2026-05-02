@@ -25,6 +25,7 @@ public class ProgramFinally2 {
             if(sc != null){
                 sc.close();
             }
+            System.out.println("Finally block executed");
         }
 
 
