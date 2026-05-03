@@ -1,6 +1,7 @@
 package projecttrycatch.application;
 
 import projecttrycatch.model.entities.Reservation2B;
+import projecttrycatch.model.exceptions.DomainException2;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
@@ -41,8 +42,11 @@ public class ProgramReservation2B {
         catch (DateTimeException e){
             System.out.println("Invalid date format");
         }
-        catch (IllegalArgumentException e){
+        catch (DomainException2 e){
             System.out.println("Error in reservation: " + e.getMessage());
+        }
+        catch (RuntimeException e){
+            System.out.println("Unexpected error");
         }
 
         sc.close();
