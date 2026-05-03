@@ -1,4 +1,13 @@
 package projecttrycatch.model.exceptions;
 
-public class DomainExceptionAccount {
+import java.io.Serial;
+
+public class DomainExceptionAccount extends RuntimeException{
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    public DomainExceptionAccount(String msg){
+        super(msg);
+    }
 }
