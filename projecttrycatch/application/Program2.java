@@ -39,7 +39,7 @@ public class Program2 {
             sc.next();
         }
         catch (InputMismatchException e){
-            System.out.println("Input Error");
+            System.out.println("Input  Error");
         }
 
         sc.close();
