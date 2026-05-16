@@ -2,7 +2,7 @@ package projectcomposi133.entities;
 
 import projectcomposi133.enums.OrderStatus4;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Order4 {
 
     DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyy HH:mm:ss");
 
-    private LocalDate moment;
+    private LocalDateTime moment;
     private OrderStatus4 status;
     private Client4 client;
 
@@ -20,17 +20,17 @@ public class Order4 {
     public Order4() {
     }
 
-    public Order4(LocalDate moment, OrderStatus4 status, Client4 client) {
+    public Order4(LocalDateTime moment, OrderStatus4 status, Client4 client) {
         this.moment = moment;
         this.status = status;
         this.client = client;
     }
 
-    public LocalDate getMoment() {
+    public LocalDateTime getMoment() {
         return moment;
     }
 
-    public void setMoment(LocalDate moment) {
+    public void setMoment(LocalDateTime moment) {
         this.moment = moment;
     }
 
